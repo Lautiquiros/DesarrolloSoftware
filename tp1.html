@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1_Quiros_Lautaro</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+        } header{
+            background-color: rgb(53, 0, 4);
+            color: #d1d1d1;
+            text-align:center;
+            padding: 20px;
+        }
+        
+        section{
+            margin-bottom:20px;
+            border:1px solid grey;
+        }
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            background-color: rgba(12, 0, 46, 0.849);
+            color:white;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            background-color: rgba(143, 142, 142, 0.452);
+        }
+        tfoot{
+            background-color:rgba(128, 128, 128, 0.541);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: rgb(255, 255, 255); font-weight: bold;">TRABAJO PRÁCTICO N1 - HTML - <b>LAUTARO QUIRÓS</h1></span>
+    </header>
+    <section id ="1">
+        <h1> <span style="color: rgb(0, 102, 0); font-weight: bold;">1. Estructura Básica del Documento HTML</span></h1>
+        <h4>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</h4>
+    </section>
+    <section id = "2">
+        <h1> <span style="color: rgb(0, 99, 102); font-weight: bold;">2. Encabezados y Propiedades del Texto</span></h1>
+        <h2>
+            <b>Este es un texto en negrita</b>
+        </h2>
+        <h3>
+            <em >Este es un texto en cursiva</em> 
+        </h3>
+        <h4>
+            <u>Este es un texto subrayado</u>
+        </h4>
+        <h5>
+            <b><u>Este es un texto en negrita y subrayado</b></u>
+        </h5>
+        <h6>
+            <b><em><u>Este es un texto en negrita, en cursiva y subrayado</u></em></b>
+        </h6>
+
+    </section>
+    <section id="3">
+        <h1><span style="color: rgb(0, 102, 51); font-weight: bold;">3. Divisiones y Agrupación de Contenido</span></h1>
+        <div>
+            <h3><b>Sección 1</b></h3>
+            <p>Contenido de la primera sección agrupada en un div</p>
+        </div>
+        <div>
+            <h3><b>Sección 2</b></h3>
+            <p>Contenido de la segunda sección agrupada en un div</p>
+        </div>
+
+
+    </section>
+    <section id ="4">
+        <h1> <span style="color: rgb(36, 0, 102); font-weight: bold;">4. Enlaces y Listas</span></h1>
+        <div>
+            <p>Visita nuestro <a href="https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Boca_Juniors"> sitio web</a>  para más información</p>
+
+        </div>
+        <div>
+            <p>Enlaces internos:</p>
+            <p><nav>
+                <ul>
+                    <li><a href="#1">Ir a Sección 1</a></li>
+                    <li><a href="#2">Ir a Sección 2</a></li>
+                    <li><a href="#3">Ir a Sección 3</a></li>
+                    <li><a href="#4">Ir a Sección 4</a></li>
+                    <li><a href="#5">Ir a Sección 5</a></li>
+                    <li><a href="#6">Ir a Sección 6</a></li>
+                    <li><a href="#7">Ir a Sección 7</a></li>
+                </ul>
+            </nav></p>
+        </div>
+    </section>
+    <section id ="5">
+        <h1><span style="color: rgb(36, 0, 102); font-weight: bold;"> 5. Elementos multimedia</span></h1>
+        <div>
+            <img src="https://media.diariouno.com.ar/p/c58c5ac8d8922dcc26f337fe326ec459/adjuntos/298/imagenes/009/005/0009005012/1200x0/smart/utnjpg.jpg"
+        width="300px" height="200px"
+         alt="UTN FRM">
+         <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" controls width="300px" height="200px"></video>
+         <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls ></audio>
+        </div>
+    </section>
+    <section id="6">
+        <h1> <span style="color: rgb(36, 0, 102); font-weight: bold;">6. Tablas</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                </tr>
+                <tr>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                    <td>Dato 6</td>
+                </tr>
+                <tr>
+                    <td>Dato 7</td>
+                    <td>Dato 8</td>
+                    <td>Dato 9</td>
+                </tr>
+    
+            </tbody>
+            <tfoot>
+                <td>Total 1</td>
+                <td>Total 2</td>
+                <td>Total 3</td>
+    
+            </tfoot>
+        </table>
+
+    </section>
+    <section id="7">
+        <h1><span style="color: rgb(36, 0, 102); font-weight: bold;">7. Formularios</span></h1>
+        <div><label>Nombre: </label>
+            <input type="Nombre" placeholder="Nombre"/>
+        </div>
+        <div>
+            <label>Email: </label>
+        <input type="email" placeholder="example@example.com.ar"/>
+        </div>
+        <div>
+        <label>Mensaje: </label>
+        <textarea placeholder="Escriba aqui su mensaje">= </textarea>
+        <button type="submit"> Enviar</button>
+        </div>
+    </section>
+
+</body>
+</html>
