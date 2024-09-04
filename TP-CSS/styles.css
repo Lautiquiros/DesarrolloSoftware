@@ -1,0 +1,162 @@
+.title{
+    font-size:3rem;
+    
+    text-transform:capitalize; 
+    text-decoration:underline;
+    background-color: rgb(6, 6, 68);
+    color:white;
+    padding: 0.4rem;
+}
+.quote1{
+    font-size:1rem;
+    text-align:center; 
+    text-transform:none; 
+    text-decoration:solid;
+}
+.container2{
+    padding: 0.4rem;
+    margin: 20px 10px 0px 0px; 
+}
+.container1{
+    text-align:center; 
+    background-color: rgb(6, 6, 68);
+    color:white;
+    padding: 0.4rem;
+
+}
+.text1{
+    font-size:1.5rem;
+    text-align:center; 
+    text-transform:capitalize; 
+    text-decoration:underline;
+    background-color: rgb(6, 6, 68);
+    color:white;
+    padding: 0.4rem;
+    margin-top: 20px;
+}
+.text2{
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size:small;
+}
+.quote2{
+    background-color: gray;
+    border-left:5px solid rgb(41, 41, 41);
+    font-style: italic;
+}
+.caja1{
+    background-color:white;
+    border:1px solid #000000;
+    margin: 10px;
+    padding-left: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px 0px black;
+    margin-bottom: 1rem;
+}
+.caja2{
+    background-color: #c49c47;
+    border:3px solid black;
+    margin: 10px;
+    padding-left: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px black;
+    margin-bottom: 3rem;
+}
+.relativo{
+    padding:0.8rem;
+    background-color: rgb(161, 222, 226);
+    border-radius: 0.6rem;
+    height: 20px;
+    width:60%;
+    margin: 10px 10px 0px 0px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+}
+.absoluto{
+    padding:0.8rem;
+    background-color: rgb(26, 133, 141);
+    border-radius: 0.6rem;
+    height: 20px;
+    width:60%;
+    margin: 10px 10px 0px 0px;
+    position: absolute;
+    left:40%;
+    z-index:1;
+    text-align: left;
+
+}
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(70, 70, 70);
+
+    }
+    .title{
+        width: 96vw;
+        margin: 0px;
+    }
+    .absoluto {
+        position: relative;
+        width: 75%; 
+        background-color: #2a7069;
+        padding: 10px;
+        border: 1px solid #cfcbcb;
+        text-decoration: solid;
+        top: 0px;
+        left: 0px;
+    }
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+ 
+
+}
+.grid-container div{
+    background-color: #254063;
+    border: 2px solid #030b1f;
+    border-radius: 5px;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+   
+}
+.cuadrado{
+    background-color: yellow;
+    width:150px;
+    height:150px;
+    transition: background-color 2s ease-in-out;
+    animation: movimiento 10s infinite;
+}
+
+.cuadrado:hover {
+    background-color: blue;
+}
+
+.circulo{
+    background: conic-gradient(
+        red, orange, yellow, green, cyan, blue, violet, red);
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin-top: 100px;
+    animation: movimiento 5s infinite;
+}    
+
+@keyframes movimiento {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(1700px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
