@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP JS</title>
+
+      <style>
+        button:disabled {
+            background-color: #ccc; 
+            cursor: not-allowed; 
+        }
+
+        input:disabled {
+            background-color: #f0f0f0; 
+            cursor: not-allowed; 
+        }
+    </style>
+    
+  </head>
+  <body>
+    <p>Este es el primer párrafo.</p>
+    <p>Este es el segundo párrafo.</p>
+    <p>Este es el tercer párrafo.</p>
+
+
+    <button id="cambiarColorBtn">Cambiar color a azul</button>
+
+
+    <form id="miFormulario">
+      <label for="campoTexto">Ingrese su texto:</label>
+      <input type="text" id="campoTexto" placeholder="Escribe aquí...">
+      <button type="submit">Mostrar Alerta</button>
+    </form>
+
+
+    <ul id="miLista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+    </ul>
+
+
+    <h1>Habilitar y Deshabilitar Campo de Texto</h1>
+    
+    <input type="text" id="campoTexto1" placeholder="Escribe algo aquí...">
+    <button id="btnDeshabilitar">Deshabilitar</button>
+    <button id="btnHabilitar" disabled>Habilitar</button>
+  
+ 
+    <h1>Formulario de Correo Electrónico</h1>
+    
+    <form id="miFormulario1">
+        <input type="email" id="campoEmail" placeholder="Escribe tu correo electrónico" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div id="correoGuardado"></div>
+    <button id="btnEliminar" style="display: none;">Eliminar Correo</button>
+
+    <script type="module" src="main.js"></script>
+
+
+  </body>
+</html>
